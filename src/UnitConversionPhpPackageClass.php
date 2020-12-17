@@ -4,7 +4,7 @@ namespace Spatie\UnitConversionPhpPackage;
 
 class UnitConversionPhpPackageClass
 {
-private float $kilograms;
+    private float $kilograms;
 
     public static function fromKilograms(float $kilograms): self
     {
