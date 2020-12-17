@@ -1,14 +1,16 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Spatie\UnitConversionPhpPackage\Tests;
 
 use PHPUnit\Framework\TestCase;
-
+use Spatie\UnitConversionPhpPackage\UnitConversionPhpPackageClass;
 class ExampleTest extends TestCase
 {
     /** @test */
-    public function true_is_true()
+    public function it_can_convert_kilograms_to_lbs()
     {
-        $this->assertTrue(true);
+        $lbs =UnitConversionPhpPackageClass::fromKilograms(100)->toLbs();
+
+        $this->assertEquals(220.4623, $lbs);
     }
 }
