@@ -2,9 +2,19 @@
 
 namespace Spatie\UnitConversionPhpPackage;
 
+use DeepCopy\Exception;
+
 class UnitConversionPhpPackageClass
 {
-private float $kilograms;
+    private float $kilograms;
+
+//    public static function fromKilograms(float $kilograms): self
+//    {
+//        $myArray = [
+//            'test',
+//            'test2'
+//        ];
+//    }
 
     public static function fromKilograms(float $kilograms): self
     {
